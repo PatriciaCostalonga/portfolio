@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSS/style_carousel.css">
+    <title>Coding</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html#welcome-section" id="nav_logo"><img id="logo_image" src="img/pc_logo.png" alt="patricia costalonga logo" class="responsive">
+      </a>
+      <ul id="menu_area">
+        <li>
+          <a href="index.html#projects" class="nav-link">My Projects</a>
+        </li>
+        <li>
+          <a href="index.html#about" class="nav-link">About me</a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="welcome-section">
+      <h1>Coding Projects</h1>
+    </header>
+
+    <main id="carousel">
+      <!-- is hidden for the left button at the start: -->
+      <button class="carousel_button carousel_button--left is-hidden">
+        <!-- "- -" indicates that is a modifier -->
+        <img src="img/arrow_left.png" alt="left button">
+      </button>
+        <section id="carousel_track-container">
+          <ul class="carousel_track">
+            <li class="carousel_slide current-slide">
+              <a href="https://patriciacostalonga.github.io/lazy_santa/" target="_blank"><img class="carousel_img" src="img/coding_01.png" alt="coding project"></a>
+            </li>
+            <li class="carousel_slide">
+              <a href="https://patriciacostalonga.github.io/hohoholiday/" target="_blank"><img class="carousel_img" src="img/coding_02.png" alt="coding project"></a>
+            </li>
+            <li class="carousel_slide">
+              <a href="https://patriciacostalonga.github.io/christmas_shopping_list/" target="_blank"><img class="carousel_img" src="img/coding_03.png" alt="coding project">
+              </a>
+            </li>
+          </ul>
+        </section>
+      <button class="carousel_button carousel_button--right">
+        <img src="img/arrow_right.png" alt="right button">
+      </button>
+      <div id="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+      </div>
+    </main>
+    <footer>
+      <a id="profile-link" href="https://github.com/Nuity29" target="_blank"><i class="fab fa-github-alt" id="github_icon"></i></a>
+    </footer>
+    <script type="text/javascript" src="JS/carousel.js">
+    </script>
+  </body>
+</html>
