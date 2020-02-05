@@ -5,16 +5,10 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; */
   background-color: #E6E8E6;
   font-family: 'Biryani', sans-serif;
   font-size: 16px;
-  /* font-family: 'Work Sans', sans-serif; */
 }
-
 #navbar{
   margin: auto;
   padding: 0;
@@ -23,25 +17,17 @@ body {
   width: 100vw;
   position: fixed;
   background-color: #08415C;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   flex-direction: row;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   z-index: 1;
 }
 
 #nav_logo  {
   margin-left: 1.5em;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   flex-direction: row;
   align-self: center;
-  -webkit-box-pack: start;
   justify-content: flex-start;
   z-index: 2;
 }
@@ -122,7 +108,6 @@ mark{
   display: block;
   background-color: #08415C;
   color: #E6E8E6;
-  /* position: relative; */
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -146,7 +131,6 @@ mark{
   display: grid;
   margin: 5em 1.5em;
   padding: 1.2em 2em;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 3fr)); */
   grid-template-columns: repeat(3, 1fr);
   width: auto;
   grid-column: 1/4;
@@ -192,26 +176,23 @@ mark{
 }
 
 #contact, #form{
+  margin: auto;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
+  width: 96%;
 }
 
 #name, #email{
   height: 3em;
-  width: 90em;
+  width: 80%;
 }
 
 #comments{
   height: 9em;
-  width: 90em;
-  /* max-width: 12.2em; */
+  width: 80%;
 }
 
 #submit{
@@ -226,9 +207,7 @@ footer{
   margin-top: 2em;
   margin-bottom: 2em;
   width: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -243,26 +222,14 @@ footer{
   color: #BA2C73;
 }
 
-@media only screen and (max-width: 500px) {
-  #navbar{
-    margin: auto;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: block;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  #nav_logo  {
-    min-width: 50px;
-  }
+@media only screen and (max-width: 700px) {
   #name, #email{
     height: 3em;
     max-width: 90em;
+  }
+  #about{
+    display: flex;
+    flex-direction: column;
   }
   #comments{
     height: 9em;
